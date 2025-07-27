@@ -1,0 +1,105 @@
+.authPage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  gap: 1rem;
+}
+
+.authCard {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 3rem;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.authHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.authHeader h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin-bottom: 0.5rem;
+}
+
+.authHeader p {
+  color: var(--muted-foreground);
+  font-size: 1rem;
+}
+
+.authForm {
+  margin-bottom: 2rem;
+}
+
+.inputError {
+  border-color: var(--destructive) !important;
+}
+
+.inputError:focus {
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2) !important;
+}
+
+.errorMessage {
+  display: block;
+  color: var(--destructive);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.submitBtn {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.authFooter {
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.authFooter p {
+  color: var(--muted-foreground);
+  margin: 0;
+}
+
+.authLink {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.authLink:hover {
+  color: #5854c7;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .authPage {
+    padding: 1rem;
+  }
+
+  .authCard {
+    padding: 2rem;
+    max-width: 100%;
+  }
+
+  .authHeader h1 {
+    font-size: 1.75rem;
+  }
+}
