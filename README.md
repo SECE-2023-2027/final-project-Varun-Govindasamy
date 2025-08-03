@@ -66,32 +66,10 @@ A modern, responsive web application where users can create their personal colle
    npm install
    ```
 
-3. **Set up environment variables**
-   ```bash
-   cp .env.example .env
-   ```
-   
-   Edit `.env` with your configuration:
-   ```env
-   # MongoDB
-   MONGODB_URI=mongodb://localhost:27017/inspiration_gallery
-   
-   # JWT Secret
-   JWT_SECRET=your-super-secret-jwt-key-change-this-in-production-123
-   
-   # Cloudinary (Optional - for image uploads)
-   CLOUDINARY_CLOUD_NAME=your-cloudinary-cloud-name
-   CLOUDINARY_API_KEY=your-cloudinary-api-key
-   CLOUDINARY_API_SECRET=your-cloudinary-api-secret
-   
-   # Next.js
-   NEXT_PUBLIC_API_URL=http://localhost:5000
-   ```
-
-4. **Start MongoDB**
+3. **Start MongoDB**
    Make sure MongoDB is running locally or use MongoDB Atlas
 
-5. **Start the development servers**
+4. **Start the development servers**
    
    Terminal 1 - Backend:
    ```bash
@@ -103,7 +81,7 @@ A modern, responsive web application where users can create their personal colle
    npm run dev
    ```
 
-6. **Access the application**
+5. **Access the application**
    - Frontend: http://localhost:3000
    - Backend API: http://localhost:5000
 
